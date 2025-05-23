@@ -7,22 +7,17 @@ Source code to generate the results of experiments for AIS DL 2024 exam.
 Install Torch with CUDA for GPU fast usage. 
 
 ```shell
-pip3 install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu118
+pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu118
 ```
 
 Addional mandatory dependencies
 
 ```shell
-pip3 install tqdm==4.67.1
-pip3 install scikit-learn==1.5.2
+pip install tqdm==4.67.1
+pip install scikit-learn==1.5.2
+pip install wandb
 ```
-
-If you desire to log results on W&B install also wanb library.
-
-```shell
-pip3 install wandb
-```
-Remember to modify the "wandb-config.json" to link your W&B project.
+If you don't desire to log results on W&B just remove the tag in the executable files. In the other case remember to modify the "wandb-config.json" to link your W&B project.
 
 ## Datasets
 
@@ -47,7 +42,7 @@ Here you can have a look at the arguments that each source file requires, rememb
 ### Baseline
 
 ```shell
-python3 ./src/test-baseline.py
+python ./src/test-baseline.py
     -m
     --adapt
     --prior_N
@@ -57,7 +52,7 @@ python3 ./src/test-baseline.py
 ### MA
 
 ```shell
-python3 ./src/test-multi-augmentation.py
+python ./src/test-multi-augmentation.py
     -m
     --adapt
     -a
@@ -70,7 +65,7 @@ python3 ./src/test-multi-augmentation.py
 ### MEMO
 
 ```shell
-python3 ./src/test-memo.py
+python ./src/test-memo.py
     -m
     --adapt
     --use_batch_stats
@@ -88,7 +83,7 @@ python3 ./src/test-memo.py
 #### KL
 
 ```shell
-python3 ./src/test-kl-memo.py
+python ./src/test-kl-memo.py
     -m
     --adapt
     --use_batch_stats
@@ -105,7 +100,7 @@ python3 ./src/test-kl-memo.py
 #### SR
 
 ```shell
-python3 ./src/test-tk-memo.py
+python ./src/test-tk-memo.py
     -m
     --adapt
     --use_batch_stats
@@ -123,7 +118,7 @@ python3 ./src/test-tk-memo.py
 #### SR
 
 ```shell
-python3 ./src/test-score-memo.py
+python ./src/test-score-memo.py
     -m
     --adapt
     --use_batch_stats

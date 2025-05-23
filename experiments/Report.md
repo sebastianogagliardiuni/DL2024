@@ -10,11 +10,11 @@ python ./src/test-baseline.py -m="ResNet-50" --adapt --wandb
 ## MA
 
 ```shell
-python3 ./src/test-multi-augmentation.py -m="ResNet-50" -a="AugMix" -N=64 --wandb
-python3 ./src/test-multi-augmentation.py -m="ResNet-50" -a="RandomResizedCrop" -N=64 --wandb
-python3 ./src/test-multi-augmentation.py -m="ResNet-50" -a="AugMix" -N=64 --adapt --wandb
-python3 ./src/test-multi-augmentation.py -m="ResNet-50" -a="RandomResizedCrop" -N=64 --adapt --wandb
-python3 ./src/test-multi-augmentation.py -m="ResNet-50" -a="Mixture" -N=64 --adapt --wandb
+python ./src/test-multi-augmentation.py -m="ResNet-50" -a="AugMix" -N=64 --wandb
+python ./src/test-multi-augmentation.py -m="ResNet-50" -a="RandomResizedCrop" -N=64 --wandb
+python ./src/test-multi-augmentation.py -m="ResNet-50" -a="AugMix" -N=64 --adapt --wandb
+python ./src/test-multi-augmentation.py -m="ResNet-50" -a="RandomResizedCrop" -N=64 --adapt --wandb
+python ./src/test-multi-augmentation.py -m="ResNet-50" -a="Mixture" -N=64 --adapt --wandb
 ```
 
 ## MA - CT

@@ -97,10 +97,10 @@ python ./src/test-kl-memo.py
     --prior_N
     --wandb
 ```
-#### SR
+#### TK
 
 ```shell
-python ./src/test-tk-memo.py
+python ./src/test-topk-memo.py
     -m
     --adapt
     --use_batch_stats
@@ -135,7 +135,7 @@ python ./src/test-score-memo.py
 
 ## Experiments
 
-To reproduce experiments shown in the Notebook you can have a look at "Report.md" in "./experiments".
+To reproduce the experiments shown in the Notebook you can have a look at "Report.md" in "./experiments".
 
 
 
